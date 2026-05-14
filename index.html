@@ -1,0 +1,830 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Remo Yukoff — Senior SDET</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=IBM+Plex+Mono:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600;700&family=Playfair+Display:ital,wght@1,500;1,700&family=Bebas+Neue&family=Archivo+Black&display=swap" rel="stylesheet">
+<script>
+  /* Set theme before paint to avoid FOUC */
+  (function () {
+    var stored = null;
+    try { stored = localStorage.getItem('theme'); } catch (e) {}
+    var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    var theme = stored || (prefersDark ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+  })();
+</script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ── TOP BAR ────────────────────────────────────────────────────────────── -->
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#top">
+      <span class="brand-mark">RY</span>
+      <span class="brand-name">REMO&nbsp;YUKOFF</span>
+    </a>
+    <nav class="topnav">
+      <a href="#experience"><span class="hash">#</span><span data-i18n="nav.experience">experience</span></a>
+      <a href="#projects"><span class="hash">#</span><span data-i18n="nav.projects">projects</span></a>
+      <a href="#stack"><span class="hash">#</span><span data-i18n="nav.stack">stack</span></a>
+      <a href="#contact"><span class="hash">#</span><span data-i18n="nav.contact">contact</span></a>
+    </nav>
+    <div class="topbar-right">
+      <span class="status-pill">
+        <span class="status-dot"></span>
+        <span data-i18n="status">disponible para trabajar</span>
+      </span>
+      <a class="icon-btn" href="assets/Remo_Yukoff_CV.pdf" download="Remo_Yukoff_CV.pdf" aria-label="download CV" title="Download CV">
+        <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 1.5v9M4.5 7L8 10.5 11.5 7M2 13.5h12"/></svg>
+        <span class="icon-btn-label">CV</span>
+      </a>
+      <button class="icon-btn theme-toggle" id="theme-toggle" aria-label="toggle theme" title="Toggle theme">
+        <svg class="theme-icon-sun" viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="3"/><path d="M8 1v2M8 13v2M1 8h2M13 8h2M3.05 3.05l1.42 1.42M11.53 11.53l1.42 1.42M3.05 12.95l1.42-1.42M11.53 4.47l1.42-1.42"/></svg>
+        <svg class="theme-icon-moon" viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13.5 9.5A6 6 0 1 1 6.5 2.5a5 5 0 0 0 7 7z"/></svg>
+      </button>
+      <button class="lang-toggle" id="lang-toggle" aria-label="toggle language">
+        <span class="lang-opt" data-lang="es">ES</span>
+        <span class="lang-sep">/</span>
+        <span class="lang-opt" data-lang="en">EN</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ── HERO ───────────────────────────────────────────────────────────────── -->
+<section class="hero">
+  <div class="hero-grid">
+    <div class="hero-left">
+      <div class="hero-meta">
+        <span class="meta-line">
+          <span class="meta-label">LOC</span>
+          <span class="meta-val" data-i18n="hero.loc">Argentina · Remoto</span>
+        </span>
+        <span class="meta-line">
+          <span class="meta-label">ROLE</span>
+          <span class="meta-val">Senior SDET</span>
+        </span>
+        <span class="meta-line">
+          <span class="meta-label">EXP</span>
+          <span class="meta-val">8+ <span data-i18n="hero.years">años</span></span>
+        </span>
+      </div>
+
+      <h1 class="hero-name">
+        <span class="hero-name-line">Remo</span>
+        <span class="hero-name-line accent">Yukoff<span class="caret">_</span></span>
+      </h1>
+
+      <p class="hero-lede" data-i18n="hero.lede">
+        Senior Software Development Engineer in Test. Construyo frameworks de automatización
+        escalables para plataformas web, APIs y data pipelines en organizaciones globales
+        como <strong>Disney</strong>, <strong>PwC</strong>, <strong>Cision</strong>,
+        <strong>Under Armour</strong> e <strong>Intercontinental Exchange</strong>.
+      </p>
+
+      <div class="hero-cta-row">
+        <a class="btn primary" href="#contact">
+          <span class="btn-prompt">$</span>
+          <span data-i18n="hero.cta1">contactar</span>
+        </a>
+        <a class="btn ghost" href="assets/Remo_Yukoff_CV.pdf" download="Remo_Yukoff_CV.pdf">
+          <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 1.5v9M4.5 7L8 10.5 11.5 7M2 13.5h12"/></svg>
+          <span data-i18n="hero.cta2">descargar CV</span>
+        </a>
+        <a class="btn link" href="https://github.com/RemoYukoff" target="_blank" rel="noopener">
+          <span>github.com/RemoYukoff</span>
+          <span class="btn-arrow">↗</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Interactive console (Nate-inspired) -->
+    <aside class="console" id="console" aria-label="interactive terminal">
+      <div class="console-chrome">
+        <div class="console-dots">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="console-title">remo@portfolio: ~</div>
+        <div class="console-hint">
+          <kbd>?</kbd> <span data-i18n="console.hint">tipea 'help' para ver comandos</span>
+        </div>
+      </div>
+      <div class="console-body" id="console-body">
+        <!-- bootstrap output injected by terminal.js -->
+      </div>
+      <form class="console-input" id="console-form" autocomplete="off">
+        <span class="console-prompt"><span class="prompt-user">remo</span>@<span class="prompt-host">portfolio</span>:<span class="prompt-path">~</span>$</span>
+        <input id="console-cmd" type="text" spellcheck="false" autocapitalize="off" autocomplete="off" aria-label="terminal command" />
+        <span class="console-cursor">▍</span>
+      </form>
+    </aside>
+  </div>
+</section>
+
+<!-- ── STATS ──────────────────────────────────────────────────────────────── -->
+<section class="stats">
+  <div class="stat">
+    <span class="stat-num">8<span class="stat-plus">+</span></span>
+    <span class="stat-label" data-i18n="stats.years">años de experiencia</span>
+  </div>
+  <div class="stat">
+    <span class="stat-num">5</span>
+    <span class="stat-label" data-i18n="stats.clients">clientes enterprise</span>
+  </div>
+  <div class="stat">
+    <span class="stat-num">4</span>
+    <span class="stat-label" data-i18n="stats.oss">proyectos activos</span>
+  </div>
+  <div class="stat">
+    <span class="stat-num">~40<span class="stat-plus">%</span></span>
+    <span class="stat-label" data-i18n="stats.regression">reducción regresión</span>
+  </div>
+  <div class="stat">
+    <span class="stat-num">5K<span class="stat-plus">rps</span></span>
+    <span class="stat-label" data-i18n="stats.load">load testing peak</span>
+  </div>
+</section>
+
+<!-- ── CLIENTS / LOGO WALL ────────────────────────────────────────────────── -->
+<section class="clients" id="clients">
+  <div class="section-head">
+    <span class="section-num">01</span>
+    <h2 class="section-title" data-i18n="clients.title">Clientes seleccionados</h2>
+    <span class="section-rule"></span>
+    <span class="section-kicker" data-i18n="clients.kicker">// trabajando vía Wizeline, TCS, Encora, Solvd</span>
+  </div>
+  <ul class="logo-wall">
+    <li class="logo-cell">
+      <span class="logo-idx">01</span>
+      <div class="logo-art"><span class="logo logo-disney" role="img" aria-label="Disney"></span></div>
+      <span class="logo-meta">The Walt Disney Company</span>
+      <span class="logo-tag">streaming · data pipelines</span>
+    </li>
+    <li class="logo-cell">
+      <span class="logo-idx">02</span>
+      <div class="logo-art"><span class="logo logo-pwc" role="img" aria-label="PwC"></span></div>
+      <span class="logo-meta">PricewaterhouseCoopers</span>
+      <span class="logo-tag" data-i18n="clients.pwc">plataforma enterprise · Katalon</span>
+    </li>
+    <li class="logo-cell">
+      <span class="logo-idx">03</span>
+      <div class="logo-art"><span class="logo logo-cision" role="img" aria-label="Cision"></span></div>
+      <span class="logo-meta">Cision</span>
+      <span class="logo-tag" data-i18n="clients.cision">media analytics · Kafka · k6</span>
+    </li>
+    <li class="logo-cell">
+      <span class="logo-idx">04</span>
+      <div class="logo-art"><span class="logo logo-ua" role="img" aria-label="Under Armour"></span></div>
+      <span class="logo-meta">Under Armour</span>
+      <span class="logo-tag">mobile · iOS &amp; Android · Appium</span>
+    </li>
+    <li class="logo-cell">
+      <span class="logo-idx">05</span>
+      <div class="logo-art"><span class="logo logo-ice" role="img" aria-label="Intercontinental Exchange"></span></div>
+      <span class="logo-meta">Intercontinental Exchange</span>
+      <span class="logo-tag" data-i18n="clients.ice">fintech · web &amp; API</span>
+    </li>
+  </ul>
+</section>
+
+<!-- ── EXPERIENCE (git log style) ─────────────────────────────────────────── -->
+<section class="experience" id="experience">
+  <div class="section-head">
+    <span class="section-num">02</span>
+    <h2 class="section-title" data-i18n="exp.title">Experiencia</h2>
+    <span class="section-rule"></span>
+    <span class="section-kicker mono">$ git log --author="Remo" --format=full</span>
+  </div>
+
+  <ol class="gitlog">
+
+    <li class="commit current">
+      <div class="commit-graph"><span class="dot"></span><span class="line"></span></div>
+      <div class="commit-body">
+        <div class="commit-head">
+          <span class="commit-hash">a8f3d2c</span>
+          <span class="commit-branch">(HEAD → main)</span>
+          <span class="commit-tag" data-i18n="exp.current">actual</span>
+        </div>
+        <div class="commit-meta">
+          <span><span class="k">Author:</span> Remo Yukoff &lt;remo.yukoff@gmail.com&gt;</span>
+          <span><span class="k">Date:</span>&nbsp;&nbsp; Oct 2024 — <span data-i18n="exp.present">presente</span></span>
+        </div>
+        <h3 class="commit-title">Senior SDET <span class="at">@</span> The Walt Disney Company <span class="via">(via Wizeline)</span></h3>
+        <ul class="commit-bullets">
+          <li data-i18n="exp.disney.1">Implementé validación automatizada de data pipelines a gran escala para segmentación de audiencia en plataformas de streaming.</li>
+          <li data-i18n="exp.disney.2">Validación de datasets con SQL checks, schema validation y comparaciones cross-pipeline sobre Spark y Databricks.</li>
+          <li data-i18n="exp.disney.3">Consultas de outputs vía Athena SQL + DBeaver; batch pipelines en Airflow respaldados por S3, Glue y Databricks workflows.</li>
+          <li data-i18n="exp.disney.4">Colaboración con data engineering para investigar fallas y mejorar la confiabilidad de pipelines productivos.</li>
+        </ul>
+        <div class="commit-stack">
+          <span class="chip">Python</span><span class="chip">Spark</span><span class="chip">Databricks</span><span class="chip">Airflow</span><span class="chip">Athena</span><span class="chip">S3</span><span class="chip">Glue</span>
+        </div>
+      </div>
+    </li>
+
+    <li class="commit">
+      <div class="commit-graph"><span class="dot"></span><span class="line"></span></div>
+      <div class="commit-body">
+        <div class="commit-head">
+          <span class="commit-hash">b1e7a04</span>
+        </div>
+        <div class="commit-meta">
+          <span><span class="k">Date:</span>&nbsp;&nbsp; May 2024 — Oct 2024</span>
+        </div>
+        <h3 class="commit-title">SDET <span class="at">@</span> PwC <span class="via">(via Tata Consultancy Services)</span></h3>
+        <ul class="commit-bullets">
+          <li data-i18n="exp.pwc.1">Diseñé estrategia de automatización para validación de plataforma enterprise.</li>
+          <li data-i18n="exp.pwc.2">Implementación de suites de regresión automatizadas con Katalon, integradas en pipelines de CI.</li>
+          <li data-i18n="exp.pwc.3">Análisis de defectos y soporte de ciclos de validación de release.</li>
+        </ul>
+        <div class="commit-stack">
+          <span class="chip">Katalon</span><span class="chip">CI/CD</span><span class="chip">Regression</span>
+        </div>
+      </div>
+    </li>
+
+    <li class="commit">
+      <div class="commit-graph"><span class="dot"></span><span class="line"></span></div>
+      <div class="commit-body">
+        <div class="commit-head">
+          <span class="commit-hash">c52f1d9</span>
+        </div>
+        <div class="commit-meta">
+          <span><span class="k">Date:</span>&nbsp;&nbsp; Jun 2022 — May 2024</span>
+        </div>
+        <h3 class="commit-title">SDET <span class="at">@</span> Eclypsium</h3>
+        <ul class="commit-bullets">
+          <li data-i18n="exp.eclyp.1">Diseñé e implementé framework de automatización en Python con pytest, Behave y Selenium.</li>
+          <li data-i18n="exp.eclyp.2">Introduje Page Object Model, fixtures y reporting con Allure.</li>
+          <li data-i18n="exp.eclyp.3">Integración con Jenkins, GitHub Actions y GitLab CI; performance testing con Locust para APIs en el rango de 1–5k req/s.</li>
+          <li data-i18n="exp.eclyp.4">Docker + Localstack para simular servicios AWS en integration testing; estabilicé el framework legacy permitiendo adopción transversal del equipo de QA.</li>
+        </ul>
+        <div class="commit-stack">
+          <span class="chip">Python</span><span class="chip">pytest</span><span class="chip">Behave</span><span class="chip">Selenium</span><span class="chip">Locust</span><span class="chip">Docker</span><span class="chip">Localstack</span><span class="chip">Allure</span>
+        </div>
+      </div>
+    </li>
+
+    <li class="commit">
+      <div class="commit-graph"><span class="dot"></span><span class="line"></span></div>
+      <div class="commit-body">
+        <div class="commit-head">
+          <span class="commit-hash">d10a8b7</span>
+        </div>
+        <div class="commit-meta">
+          <span><span class="k">Date:</span>&nbsp;&nbsp; Aug 2021 — Feb 2023</span>
+        </div>
+        <h3 class="commit-title">Test Automation Engineer <span class="at">@</span> Cision <span class="via">(via Encora)</span></h3>
+        <ul class="commit-bullets">
+          <li data-i18n="exp.cision.1">Automatización de testing para plataforma de media analytics procesando alto volumen de news y article data.</li>
+          <li data-i18n="exp.cision.2">UI con Selenium + API testing con pytest, requests y Postman; load testing con k6.</li>
+          <li data-i18n="exp.cision.3">Trabajo con pipelines de ingesta basados en Kafka; mentoring a QA engineers junior y aportes a la estrategia de testing.</li>
+        </ul>
+        <div class="commit-stack">
+          <span class="chip">Selenium</span><span class="chip">pytest</span><span class="chip">k6</span><span class="chip">Kafka</span><span class="chip">Postman</span>
+        </div>
+      </div>
+    </li>
+
+    <li class="commit">
+      <div class="commit-graph"><span class="dot"></span></div>
+      <div class="commit-body">
+        <div class="commit-head">
+          <span class="commit-hash">e9c3f51</span>
+          <span class="commit-tag muted" data-i18n="exp.initial">commit inicial</span>
+        </div>
+        <div class="commit-meta">
+          <span><span class="k">Date:</span>&nbsp;&nbsp; Mar 2018 — Aug 2021</span>
+        </div>
+        <h3 class="commit-title">Test Automation Engineer <span class="at">@</span> Under Armour / Intercontinental Exchange <span class="via">(via Solvd)</span></h3>
+        <ul class="commit-bullets">
+          <li data-i18n="exp.ua.1">Mobile automation testing para iOS y Android con Appium; web y API con Selenium y Cypress.</li>
+          <li data-i18n="exp.ua.2">Reducí tiempo de regresión ~40% a través de mejoras en automatización.</li>
+          <li data-i18n="exp.ua.3">Participación en ciclos de regresión, análisis de fallas y validación de releases.</li>
+        </ul>
+        <div class="commit-stack">
+          <span class="chip">Appium</span><span class="chip">Selenium</span><span class="chip">Cypress</span><span class="chip">iOS</span><span class="chip">Android</span>
+        </div>
+      </div>
+    </li>
+
+  </ol>
+</section>
+
+<!-- ── PROJECTS ────────────────────────────────────────────────────────── -->
+<section class="oss" id="projects">
+  <div class="section-head">
+    <span class="section-num">03</span>
+    <h2 class="section-title" data-i18n="oss.title">Proyectos</h2>
+    <span class="section-rule"></span>
+    <span class="section-kicker mono" data-i18n="oss.kicker">// trabajo actual + herramientas para developers</span>
+  </div>
+
+  <!-- Featured: inflacion.ar -->
+  <article class="feature-project">
+    <div class="fp-meta">
+      <span class="fp-status">
+        <span class="fp-status-dot"></span>
+        <span data-i18n="oss.fp.status">WIP · activo</span>
+      </span>
+      <span class="fp-cat mono" data-i18n="oss.fp.cat">data platform · personal</span>
+    </div>
+    <div class="fp-grid">
+      <div class="fp-left">
+        <h3 class="fp-title">inflacion<span class="accent">.ar</span></h3>
+        <p class="fp-tagline" data-i18n="oss.fp.tagline">
+          Datos económicos abiertos, sin editorial, para el argentino del día a día.
+        </p>
+        <p class="fp-desc" data-i18n="oss.fp.desc">
+          Plataforma de visualización de datos económicos argentinos con tres principios:
+          <strong>transparencia total</strong> (cada número con fuente y metodología),
+          <strong>comparación directa</strong> (oficiales, alternativos y expectativas en el mismo gráfico),
+          y <strong>contexto histórico</strong> (devaluaciones, cepos, crisis anotados sobre la serie).
+        </p>
+        <div class="fp-cta">
+          <a class="btn primary" href="https://inflacion-ar-frontend.vercel.app/" target="_blank" rel="noopener">
+            <span class="btn-prompt">↗</span>
+            <span data-i18n="oss.fp.cta1">abrir demo</span>
+          </a>
+          <a class="btn link" href="https://inflacion.ar/" target="_blank" rel="noopener">
+            <span>inflacion.ar</span>
+            <span class="fp-pending mono" data-i18n="oss.fp.pending">(pendiente aprobación)</span>
+          </a>
+        </div>
+      </div>
+      <div class="fp-right">
+        <!-- Schematic dashboard preview (CSS-drawn) -->
+        <div class="fp-preview" aria-hidden="true">
+          <div class="fpp-chrome">
+            <div class="fpp-dots"><span></span><span></span><span></span></div>
+            <span class="fpp-url mono">inflacion.ar</span>
+          </div>
+          <div class="fpp-body">
+            <div class="fpp-row">
+              <span class="fpp-pill active">IPC INDEC</span>
+              <span class="fpp-pill">REM BCRA</span>
+              <span class="fpp-pill">UTDT</span>
+              <span class="fpp-pill">+38</span>
+            </div>
+            <div class="fpp-chart">
+              <svg viewBox="0 0 200 80" preserveAspectRatio="none">
+                <defs>
+                  <linearGradient id="fpp-grad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="currentColor" stop-opacity="0.25"/>
+                    <stop offset="100%" stop-color="currentColor" stop-opacity="0"/>
+                  </linearGradient>
+                </defs>
+                <path d="M0,60 L15,58 L30,55 L45,52 L60,50 L75,46 L90,42 L105,36 L120,30 L135,22 L150,14 L165,18 L180,10 L200,6 L200,80 L0,80 Z" fill="url(#fpp-grad)" />
+                <path d="M0,60 L15,58 L30,55 L45,52 L60,50 L75,46 L90,42 L105,36 L120,30 L135,22 L150,14 L165,18 L180,10 L200,6" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                <line x1="60" y1="0" x2="60" y2="80" stroke="currentColor" stroke-width="0.5" stroke-dasharray="2 3" opacity="0.4"/>
+                <line x1="135" y1="0" x2="135" y2="80" stroke="currentColor" stroke-width="0.5" stroke-dasharray="2 3" opacity="0.4"/>
+                <circle cx="60" cy="50" r="2" fill="currentColor"/>
+                <circle cx="135" cy="22" r="2" fill="currentColor"/>
+              </svg>
+              <span class="fpp-anno fpp-anno-1 mono">CEPO</span>
+              <span class="fpp-anno fpp-anno-2 mono">PASO 2023</span>
+            </div>
+            <div class="fpp-stats">
+              <div class="fpp-stat"><span class="fpp-stat-n">41</span><span class="fpp-stat-l" data-i18n="oss.fp.s1">fuentes</span></div>
+              <div class="fpp-stat"><span class="fpp-stat-n">15</span><span class="fpp-stat-l" data-i18n="oss.fp.s2">países</span></div>
+              <div class="fpp-stat"><span class="fpp-stat-n">∞</span><span class="fpp-stat-l" data-i18n="oss.fp.s3">contexto</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="fp-features">
+      <div class="fp-feat">
+        <span class="fp-feat-k">01</span>
+        <span class="fp-feat-t" data-i18n="oss.fp.f1.t">41 fuentes integradas</span>
+        <span class="fp-feat-d" data-i18n="oss.fp.f1.d">INDEC, IPCBA, REM BCRA, UTDT, Big Mac, Nafta YPF, tarifas, pobreza, comparación internacional.</span>
+      </div>
+      <div class="fp-feat">
+        <span class="fp-feat-k">02</span>
+        <span class="fp-feat-t" data-i18n="oss.fp.f2.t">Eventos históricos anotados</span>
+        <span class="fp-feat-d" data-i18n="oss.fp.f2.d">PASO, cepos, devaluaciones, acuerdos FMI marcados sobre la serie para dar contexto inmediato.</span>
+      </div>
+      <div class="fp-feat">
+        <span class="fp-feat-k">03</span>
+        <span class="fp-feat-t" data-i18n="oss.fp.f3.t">Calculadora "¿Cuánto vale hoy?"</span>
+        <span class="fp-feat-d" data-i18n="oss.fp.f3.d">Dado un mes de inicio y un monto en ARS, calcula el equivalente actual componiendo el IPC mensual.</span>
+      </div>
+      <div class="fp-feat">
+        <span class="fp-feat-k">04</span>
+        <span class="fp-feat-t" data-i18n="oss.fp.f4.t">Metodología por fuente</span>
+        <span class="fp-feat-d" data-i18n="oss.fp.f4.d">Cada serie documenta qué mide, de dónde viene, qué transformaciones se aplican y qué limitaciones tiene.</span>
+      </div>
+    </footer>
+    <div class="fp-stack">
+      <span class="chip">React</span>
+      <span class="chip">TypeScript</span>
+      <span class="chip">Vite</span>
+      <span class="chip">@visx</span>
+      <span class="chip">React Query</span>
+      <span class="chip">Hono</span>
+      <span class="chip">Node.js</span>
+      <span class="chip">node-cron</span>
+      <span class="chip">undici</span>
+      <span class="chip">npm workspaces</span>
+      <span class="chip">Railway</span>
+      <span class="chip">Vercel</span>
+    </div>
+  </article>
+
+  <!-- Featured: 4foodies -->
+  <article class="feature-project">
+    <div class="fp-meta">
+      <span class="fp-status">
+        <span class="fp-status-dot"></span>
+        <span data-i18n="oss.fp2.status">v1 shipped · iOS</span>
+      </span>
+      <span class="fp-cat mono" data-i18n="oss.fp2.cat">mobile app · social · personal</span>
+    </div>
+    <div class="fp-grid">
+      <div class="fp-left">
+        <h3 class="fp-title">4<span class="accent">foodies</span></h3>
+        <p class="fp-tagline" data-i18n="oss.fp2.tagline">
+          Aplicación social de reseñas de comida — descubrí, guardá y reseñá restaurantes.
+        </p>
+        <p class="fp-desc" data-i18n="oss.fp2.desc">
+          App social <strong>mobile-first</strong> sobre <strong>React Native + Expo</strong> con
+          <strong>backend Node/Express en TypeScript</strong>, contrato de API tipado end-to-end,
+          y <strong>Supabase</strong> como base de datos con RLS por tabla, auth y storage.
+        </p>
+        <div class="fp-cta">
+          <a class="btn primary" href="https://apps.apple.com/ar/app/4foodies/id6760569076" target="_blank" rel="noopener">
+            <span class="btn-prompt">↗</span>
+            <span data-i18n="oss.fp2.cta1">descargar en App Store</span>
+          </a>
+          <a class="btn link" href="https://4foodies.app/" target="_blank" rel="noopener">
+            <span>4foodies.app</span>
+            <span class="btn-arrow">↗</span>
+          </a>
+        </div>
+      </div>
+      <div class="fp-right fp-right-mobile">
+        <!-- Schematic mobile preview -->
+        <div class="fpp-phone" aria-hidden="true">
+          <div class="fpp-phone-notch"></div>
+          <div class="fpp-phone-screen">
+            <div class="fpp-statusbar">
+              <span class="mono">9:41</span>
+              <span class="fpp-sb-icons">
+                <span class="fpp-bars"></span>
+                <span class="fpp-wifi"></span>
+                <span class="fpp-batt"></span>
+              </span>
+            </div>
+            <div class="fpp-map">
+              <!-- Schematic map grid -->
+              <svg class="fpp-map-svg" viewBox="0 0 200 280" preserveAspectRatio="none">
+                <defs>
+                  <pattern id="map-grid" width="22" height="22" patternUnits="userSpaceOnUse">
+                    <path d="M 22 0 L 0 0 0 22" fill="none" stroke="currentColor" stroke-width="0.5" opacity="0.15"/>
+                  </pattern>
+                </defs>
+                <rect width="200" height="280" fill="url(#map-grid)" color="currentColor"/>
+                <path d="M0,120 Q60,100 120,140 T200,150" stroke="currentColor" stroke-width="2.5" fill="none" opacity="0.35"/>
+                <path d="M40,0 Q60,80 120,120 T180,280" stroke="currentColor" stroke-width="1.5" fill="none" opacity="0.25"/>
+              </svg>
+              <!-- Restaurant pins -->
+              <span class="fpp-pin" style="top:28%;left:32%"></span>
+              <span class="fpp-pin active" style="top:42%;left:55%"></span>
+              <span class="fpp-pin" style="top:58%;left:24%"></span>
+              <span class="fpp-pin" style="top:67%;left:68%"></span>
+            </div>
+            <div class="fpp-card">
+              <div class="fpp-card-row">
+                <span class="fpp-card-thumb"></span>
+                <div class="fpp-card-text">
+                  <span class="fpp-card-title">Don Julio</span>
+                  <span class="fpp-card-meta mono">★ 4.8 · Palermo · $$$</span>
+                </div>
+              </div>
+              <div class="fpp-card-tags">
+                <span class="fpp-tag">parrilla</span>
+                <span class="fpp-tag">vino</span>
+                <span class="fpp-tag">+</span>
+              </div>
+            </div>
+            <div class="fpp-tabbar">
+              <span class="fpp-tab active"></span>
+              <span class="fpp-tab"></span>
+              <span class="fpp-tab"></span>
+              <span class="fpp-tab"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="fp-features">
+      <div class="fp-feat">
+        <span class="fp-feat-k">01</span>
+        <span class="fp-feat-t" data-i18n="oss.fp2.f1.t">Mapa nativo con pins</span>
+        <span class="fp-feat-d" data-i18n="oss.fp2.f1.d">react-native-maps, gestos y animaciones con reanimated + gesture-handler.</span>
+      </div>
+      <div class="fp-feat">
+        <span class="fp-feat-k">02</span>
+        <span class="fp-feat-t" data-i18n="oss.fp2.f2.t">API tipada end-to-end</span>
+        <span class="fp-feat-d" data-i18n="oss.fp2.f2.d">tsoa genera rutas + OpenAPI spec desde los decorators; swagger.json es la fuente de verdad.</span>
+      </div>
+      <div class="fp-feat">
+        <span class="fp-feat-k">03</span>
+        <span class="fp-feat-t" data-i18n="oss.fp2.f3.t">Supabase + RLS por tabla</span>
+        <span class="fp-feat-d" data-i18n="oss.fp2.f3.d">Postgres + auth + storage; Row Level Security en cada tabla; migraciones SQL manuales versionadas.</span>
+      </div>
+      <div class="fp-feat">
+        <span class="fp-feat-k">04</span>
+        <span class="fp-feat-t" data-i18n="oss.fp2.f4.t">EAS · OTA updates</span>
+        <span class="fp-feat-d" data-i18n="oss.fp2.f4.d">Builds en Expo Application Services y over-the-air updates sin pasar por App Store review.</span>
+      </div>
+    </footer>
+    <div class="fp-stack">
+      <span class="chip">React Native</span>
+      <span class="chip">Expo</span>
+      <span class="chip">TypeScript</span>
+      <span class="chip">Zustand</span>
+      <span class="chip">react-native-maps</span>
+      <span class="chip">Reanimated</span>
+      <span class="chip">Node.js</span>
+      <span class="chip">Express</span>
+      <span class="chip">tsoa</span>
+      <span class="chip">OpenAPI</span>
+      <span class="chip">Supabase</span>
+      <span class="chip">PostgreSQL</span>
+      <span class="chip">Astro</span>
+      <span class="chip">Docker</span>
+      <span class="chip">nginx</span>
+    </div>
+  </article>
+
+  <h3 class="subheading subheading-mid" data-i18n="oss.tools">Herramientas open source</h3>
+
+  <div class="oss-grid">
+
+    <article class="repo">
+      <header class="repo-head">
+        <div class="repo-title">
+          <span class="repo-icon">▣</span>
+          <a class="repo-name" href="https://github.com/RemoYukoff/aqueductus" target="_blank" rel="noopener">aqueductus</a>
+          <span class="repo-vis">public</span>
+        </div>
+        <a class="repo-ext" href="https://github.com/RemoYukoff/aqueductus" target="_blank" rel="noopener">github.com/RemoYukoff/aqueductus ↗</a>
+      </header>
+      <p class="repo-desc" data-i18n="oss.aqua.desc">
+        Framework open source para testing de datos: valida datasets y outputs de pipelines
+        usando SQL sobre múltiples data sources, con configuración declarativa en YAML.
+      </p>
+      <pre class="repo-code"><span class="c">
+<span class="cm"># aqueductus.yml</span>
+<span class="ck">sources</span>:
+  <span class="ck">warehouse</span>:
+    <span class="ck">type</span>: <span class="cs">postgres</span>
+    <span class="ck">dsn</span>:  <span class="cs">${WAREHOUSE_DSN}</span>
+
+<span class="ck">tests</span>:
+  - <span class="ck">name</span>: <span class="cs">no orphan orders</span>
+    <span class="ck">query</span>: |
+      SELECT COUNT(*) FROM orders o
+      LEFT JOIN customers c ON c.id = o.customer_id
+      WHERE c.id IS NULL
+    <span class="ck">expect</span>: { <span class="ck">rows</span>: 0 }
+</span></pre>
+      <footer class="repo-foot">
+        <span class="chip">Python</span>
+        <span class="chip">YAML</span>
+        <span class="chip">SQL</span>
+        <span class="chip">Data Quality</span>
+      </footer>
+    </article>
+
+    <article class="repo">
+      <header class="repo-head">
+        <div class="repo-title">
+          <span class="repo-icon">▤</span>
+          <a class="repo-name" href="https://open-vsx.org/extension/remoyukoff/behave-runner" target="_blank" rel="noopener">behave-runner</a>
+          <span class="repo-vis">public</span>
+        </div>
+        <a class="repo-ext" href="https://open-vsx.org/extension/remoyukoff/behave-runner" target="_blank" rel="noopener">open-vsx.org/.../behave-runner ↗</a>
+      </header>
+      <p class="repo-desc" data-i18n="oss.behave.desc">
+        Extensión de VS Code para ejecutar tests BDD con Behave directamente desde el editor.
+        Soporta feature files y scenario outlines; mejora el workflow para entornos Python.
+      </p>
+      <pre class="repo-code"><span class="c">
+<span class="cm"># login.feature</span>
+<span class="ck">Feature</span>: User authentication
+
+  <span class="ck">Scenario</span> Outline: Login with valid credentials
+    <span class="ck">Given</span> the user is on the login page
+    <span class="ck">When</span>  they submit "&lt;email&gt;" and "&lt;password&gt;"
+    <span class="ck">Then</span>  they should land on the dashboard
+
+    <span class="cm"># ▶ Run scenario · ▶ Run feature</span>
+</span></pre>
+      <footer class="repo-foot">
+        <span class="chip">TypeScript</span>
+        <span class="chip">VS Code API</span>
+        <span class="chip">BDD</span>
+        <span class="chip">Python</span>
+      </footer>
+    </article>
+
+  </div>
+</section>
+
+<!-- ── STACK (htop-style) ────────────────────────────────────────────────── -->
+<section class="stack" id="stack">
+  <div class="section-head">
+    <span class="section-num">04</span>
+    <h2 class="section-title" data-i18n="stack.title">Stack &amp; Skills</h2>
+    <span class="section-rule"></span>
+    <span class="section-kicker mono">$ htop --user=remo</span>
+  </div>
+
+  <div class="htop">
+    <div class="htop-bars">
+      <div class="bar-row">
+        <span class="bar-label">PY</span>
+        <div class="bar"><div class="bar-fill" style="width:97%"></div></div>
+        <span class="bar-val">97%</span>
+      </div>
+      <div class="bar-row">
+        <span class="bar-label">AUTOMATION</span>
+        <div class="bar"><div class="bar-fill" style="width:95%"></div></div>
+        <span class="bar-val">95%</span>
+      </div>
+      <div class="bar-row">
+        <span class="bar-label">API</span>
+        <div class="bar"><div class="bar-fill" style="width:92%"></div></div>
+        <span class="bar-val">92%</span>
+      </div>
+      <div class="bar-row">
+        <span class="bar-label">CI/CD</span>
+        <div class="bar"><div class="bar-fill" style="width:88%"></div></div>
+        <span class="bar-val">88%</span>
+      </div>
+      <div class="bar-row">
+        <span class="bar-label">DATA</span>
+        <div class="bar"><div class="bar-fill" style="width:85%"></div></div>
+        <span class="bar-val">85%</span>
+      </div>
+      <div class="bar-row">
+        <span class="bar-label">CLOUD/AWS</span>
+        <div class="bar"><div class="bar-fill" style="width:78%"></div></div>
+        <span class="bar-val">78%</span>
+      </div>
+    </div>
+
+    <table class="htop-table">
+      <thead>
+        <tr>
+          <th>PID</th>
+          <th>USER</th>
+          <th data-i18n="stack.col.category">CATEGORÍA</th>
+          <th>TOOLS</th>
+          <th>STATUS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1337</td><td>remo</td><td data-i18n="stack.row.lang">Languages</td><td>Python · Java · JavaScript</td><td class="ok">RUNNING</td></tr>
+        <tr><td>1402</td><td>remo</td><td data-i18n="stack.row.auto">Test Automation</td><td>pytest · Selenium · Playwright · Behave · Cucumber · Appium</td><td class="ok">RUNNING</td></tr>
+        <tr><td>1518</td><td>remo</td><td data-i18n="stack.row.api">API Testing</td><td>REST · GraphQL · requests · Postman · Rest-Assured</td><td class="ok">RUNNING</td></tr>
+        <tr><td>1624</td><td>remo</td><td data-i18n="stack.row.perf">Performance</td><td>k6 · Locust</td><td class="ok">RUNNING</td></tr>
+        <tr><td>1731</td><td>remo</td><td>CI/CD</td><td>Jenkins · GitHub Actions · GitLab CI</td><td class="ok">RUNNING</td></tr>
+        <tr><td>1845</td><td>remo</td><td data-i18n="stack.row.infra">Infrastructure</td><td>Docker · Localstack</td><td class="ok">RUNNING</td></tr>
+        <tr><td>1962</td><td>remo</td><td>Cloud</td><td>AWS · S3 · Athena · Glue</td><td class="ok">RUNNING</td></tr>
+        <tr><td>2077</td><td>remo</td><td data-i18n="stack.row.data">Data Testing</td><td>SQL validation · schema validation · dataset compare</td><td class="ok">RUNNING</td></tr>
+        <tr><td>2184</td><td>remo</td><td>Observability</td><td>Prometheus · Elastic · Grafana</td><td class="ok">RUNNING</td></tr>
+        <tr><td>2299</td><td>remo</td><td>Databases</td><td>PostgreSQL · MySQL · MongoDB</td><td class="ok">RUNNING</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ── EDUCATION + LANGUAGES ─────────────────────────────────────────────── -->
+<section class="edu" id="edu">
+  <div class="section-head">
+    <span class="section-num">05</span>
+    <h2 class="section-title" data-i18n="edu.title">Formación &amp; Idiomas</h2>
+    <span class="section-rule"></span>
+  </div>
+  <div class="edu-grid">
+    <div class="edu-col">
+      <h3 class="subheading" data-i18n="edu.sub.studies">Estudios</h3>
+      <ul class="edu-list">
+        <li>
+          <span class="edu-mark">/</span>
+          <div>
+            <div class="edu-inst">National University of the Chaco Austral</div>
+            <div class="edu-area" data-i18n="edu.cs">Bachelor en Computer Science</div>
+          </div>
+        </li>
+        <li>
+          <span class="edu-mark">/</span>
+          <div>
+            <div class="edu-inst">University of Buenos Aires <span class="muted">— IALAB</span></div>
+            <div class="edu-area" data-i18n="edu.ai">Inteligencia Artificial</div>
+          </div>
+        </li>
+        <li>
+          <span class="edu-mark">/</span>
+          <div>
+            <div class="edu-inst">Acámica</div>
+            <div class="edu-area">Data Science</div>
+          </div>
+        </li>
+        <li>
+          <span class="edu-mark">/</span>
+          <div>
+            <div class="edu-inst">Globant</div>
+            <div class="edu-area">Python — Flask, Django</div>
+          </div>
+        </li>
+        <li>
+          <span class="edu-mark">/</span>
+          <div>
+            <div class="edu-inst">Informatorio Chaco</div>
+            <div class="edu-area" data-i18n="edu.fs">Fullstack Development</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="edu-col">
+      <h3 class="subheading" data-i18n="edu.sub.lang">Idiomas</h3>
+      <ul class="lang-list">
+        <li>
+          <div class="lang-row">
+            <span class="lang-name">Español</span>
+            <span class="lang-level" data-i18n="edu.lang.native">Nativo</span>
+          </div>
+          <div class="bar"><div class="bar-fill" style="width:100%"></div></div>
+        </li>
+        <li>
+          <div class="lang-row">
+            <span class="lang-name">English</span>
+            <span class="lang-level">Advanced — C1</span>
+          </div>
+          <div class="bar"><div class="bar-fill" style="width:82%"></div></div>
+        </li>
+      </ul>
+
+      <h3 class="subheading subheading-2" data-i18n="edu.sub.elsewhere">En otros lados</h3>
+      <ul class="links-list">
+        <li><a href="https://github.com/RemoYukoff" target="_blank" rel="noopener">github.com/RemoYukoff <span class="arrow">↗</span></a></li>
+        <li><a href="https://www.linkedin.com/in/remoyukoff" target="_blank" rel="noopener">linkedin.com/in/remoyukoff <span class="arrow">↗</span></a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ───────────────────────────────────────────────────────────── -->
+<section class="contact" id="contact">
+  <div class="contact-panel">
+    <div class="contact-prompt">
+      <span class="mono prompt-line">$ ssh remo@portfolio.io</span>
+      <span class="mono prompt-line" data-i18n="contact.connecting">Conectando…</span>
+      <span class="mono prompt-line ok">Connection established ✓</span>
+    </div>
+    <h2 class="contact-headline">
+      <span data-i18n="contact.h1">¿Construimos algo</span><br>
+      <span class="accent" data-i18n="contact.h2">que no se rompa?</span>
+    </h2>
+    <p class="contact-lede" data-i18n="contact.lede">
+      Disponible para roles senior de SDET, QA Architect o Test Engineering Lead — remoto, idealmente
+      en proyectos con foco en data, performance o developer tooling.
+    </p>
+    <div class="contact-cta">
+      <a class="btn primary big" href="mailto:remo.yukoff@gmail.com">
+        <span class="btn-prompt">$</span>
+        <span>remo.yukoff@gmail.com</span>
+      </a>
+      <a class="btn ghost big" href="tel:+5493644338125">
+        <span>+54 9 3644 338125</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span class="mono">© 2026 Remo Yukoff · <span data-i18n="footer.built">construido a mano con HTML, CSS y un poquito de JS</span></span>
+    <span class="mono muted">v1.0.0 · last commit: 2026-05-14</span>
+  </div>
+</footer>
+
+</main>
+
+<!-- i18n + terminal -->
+<script src="i18n.js"></script>
+<script src="terminal.js"></script>
+</body>
+</html>
