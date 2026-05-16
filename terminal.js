@@ -415,8 +415,17 @@
     if (e.target.tagName !== 'A') input.focus();
   });
 
+  function matchConsoleHeight() {
+    const heroLeft = document.querySelector('.hero-left');
+    const consoleEl = document.getElementById('console');
+    if (!heroLeft || !consoleEl) return;
+    consoleEl.style.height = heroLeft.offsetHeight + 'px';
+  }
+
   document.addEventListener('DOMContentLoaded', () => {
     bindThemeToggle();
     boot();
+    matchConsoleHeight();
+    window.addEventListener('resize', () => requestAnimationFrame(matchConsoleHeight));
   });
 })();
