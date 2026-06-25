@@ -18,3 +18,6 @@ screenshots/
 
 # MCP / tooling artifacts
 .playwright-mcp/
+*.png
+*.jpg
+*.jpeg

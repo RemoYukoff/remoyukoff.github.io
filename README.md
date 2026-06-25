@@ -29,7 +29,9 @@ python3 -m http.server 8000
 ├── index.html        # page markup
 ├── styles.css        # all styles (light + dark themes)
 ├── i18n.js           # ES/EN dictionary + locale toggle
+├── CNAME             # custom domain (remoyukoff.com)
 └── assets/
+    ├── favicon.svg
     ├── Remo_Yukoff_CV.pdf
     └── logos/        # client wordmarks (rendered monochrome via CSS mask)
 ```
