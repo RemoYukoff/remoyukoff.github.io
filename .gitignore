@@ -15,3 +15,6 @@ build/
 uploads/
 screenshots/
 *.log
+
+# MCP / tooling artifacts
+.playwright-mcp/
