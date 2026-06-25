@@ -1,39 +1,39 @@
 /* ─────────────────────────────────────────────────────────────────────────
    REMO YUKOFF — PORTFOLIO
-   Clean, spacious, recruiter-first. Cream + teal accent.
+   Clean, spacious, recruiter-first. Forest green palette: Lint · Teal Green · Forest Green · Black.
    ───────────────────────────────────────────────────────────────────────── */
 
 :root,
 [data-theme="light"] {
-  --bg:           #f6f3ee;
-  --bg-2:         #eeebe3;
-  --bg-3:         #e5e1d8;
-  --paper:        #fdfcf9;
-  --ink:          #0d1117;
-  --ink-2:        #2e3838;
-  --muted:        #5e6868;
-  --hair:         #d8d3c8;
-  --hair-2:       #c8c2b5;
+  --bg:           #f4f4e8;
+  --bg-2:         #ebebd8;
+  --bg-3:         #e1e1cc;
+  --paper:        #fafaf4;
+  --ink:          #001f17;
+  --ink-2:        #00493a;
+  --muted:        #527060;
+  --hair:         #c8c8a0;
+  --hair-2:       #b6b68c;
 
-  --accent:       #006e6e;
+  --accent:       #00a385;
   --accent-2:     color-mix(in oklab, var(--accent) 72%, black);
   --accent-soft:  color-mix(in oklab, var(--accent) 12%, transparent);
 }
 
 [data-theme="dark"] {
-  --bg:           #0a1010;
-  --bg-2:         #111918;
-  --bg-3:         #192222;
-  --paper:        #0e1717;
-  --ink:          #e4ebe7;
-  --ink-2:        #b4bfbb;
-  --muted:        #788480;
-  --hair:         #1c2a2a;
-  --hair-2:       #263434;
+  --bg:           #001f17;
+  --bg-2:         #002b21;
+  --bg-3:         #003828;
+  --paper:        #002620;
+  --ink:          #d7d7a8;
+  --ink-2:        #b8b892;
+  --muted:        #7a8e7e;
+  --hair:         #003828;
+  --hair-2:       #004535;
 
-  --accent:       #2cb0b0;
-  --accent-2:     color-mix(in oklab, var(--accent) 78%, white);
-  --accent-soft:  color-mix(in oklab, var(--accent) 15%, transparent);
+  --accent:       #00a385;
+  --accent-2:     color-mix(in oklab, var(--accent) 82%, white);
+  --accent-soft:  color-mix(in oklab, var(--accent) 16%, transparent);
 }
 
 :root {
