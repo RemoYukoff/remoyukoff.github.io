@@ -2,18 +2,16 @@
 
 Personal portfolio — Senior Software Development Engineer in Test.
 
-🔗 **Live:** [remoyukoff.github.io](https://remoyukoff.github.io)
+🔗 **Live:** [remoyukoff.com](https://remoyukoff.com)
 
 ## Stack
 
 Hand-written. No build step.
 
 - HTML, CSS, vanilla JS
-- IBM Plex Sans, IBM Plex Mono, JetBrains Mono (Google Fonts)
+- Plus Jakarta Sans, IBM Plex Mono (Google Fonts)
 - Bilingual (ES / EN) with browser-locale auto-detect
 - Light / dark theme with `prefers-color-scheme` default + localStorage persistence
-- Interactive terminal panel in the hero with real commands (`help`, `about`,
-  `experience`, `projects`, `skills`, `contact`, `cv`, `theme`, `lang`, …)
 
 ## Local preview
 
@@ -31,7 +29,6 @@ python3 -m http.server 8000
 ├── index.html        # page markup
 ├── styles.css        # all styles (light + dark themes)
 ├── i18n.js           # ES/EN dictionary + locale toggle
-├── terminal.js       # interactive console (commands, history, autocomplete)
 └── assets/
     ├── Remo_Yukoff_CV.pdf
     └── logos/        # client wordmarks (rendered monochrome via CSS mask)
