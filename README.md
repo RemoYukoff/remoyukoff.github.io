@@ -9,8 +9,9 @@ Personal portfolio — Senior Software Development Engineer in Test.
 Hand-written. No build step.
 
 - HTML, CSS, vanilla JS
-- Plus Jakarta Sans, IBM Plex Mono (Google Fonts)
+- System fonts only: Helvetica Neue / Arial + the platform monospace. No webfont requests
 - Bilingual (ES / EN) with browser-locale auto-detect
+- Forest green palette (Lint · Teal Green · Forest Green · Black), one accent, 12-column grid, dithered seams
 - Light / dark theme with `prefers-color-scheme` default + localStorage persistence
 
 ## Local preview
