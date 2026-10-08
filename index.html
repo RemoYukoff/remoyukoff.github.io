@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Remo Yukoff — Senior SDET</title>
-<meta name="description" content="Senior Software Development Engineer in Test. Automation frameworks for web platforms, APIs and data pipelines at Disney, PwC, Cision, Under Armour and Intercontinental Exchange.">
+<title>Remo Yukoff — AI Quality & Test Automation</title>
+<meta name="description" content="Senior AI Quality &amp; Test Automation Engineer. 8+ years building automation for web platforms, APIs and data pipelines at Disney, PwC, Cision, Under Armour and Intercontinental Exchange. Builder of Quorum, AI test design for Jira.">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <script>
   (function () {
@@ -14,303 +14,294 @@
     document.documentElement.setAttribute('data-theme', stored || (prefersDark ? 'dark' : 'light'));
   })();
 </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=JetBrains+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<div class="bar-top">
-  <a class="brand" href="#top"><span class="brand-mark">RY</span><span>Remo Yukoff</span></a>
-  <nav>
-    <a href="#experience" data-i18n="nav.experience">experiencia</a><a href="#projects" data-i18n="nav.projects">proyectos</a><a href="#stack" data-i18n="nav.stack">stack</a><a href="#contact" data-i18n="nav.contact">contacto</a>
+<header class="top">
+  <a class="brand" href="#top" aria-label="Remo Yukoff">
+    <svg class="brand-mark" viewBox="0 0 20 20" aria-hidden="true"><rect width="20" height="20"/><path d="M5 10.5l3.2 3.2L15 6.5"/></svg>
+    <span>Remo Yukoff</span>
+  </a>
+  <nav aria-label="Secciones">
+    <a href="#experience" data-i18n="nav.experience">experiencia</a>
+    <a href="#projects" data-i18n="nav.projects">proyectos</a>
+    <a href="#stack" data-i18n="nav.stack">stack</a>
+    <a href="#contact" data-i18n="nav.contact">contacto</a>
   </nav>
-  <a class="btn" href="assets/Remo_Yukoff_CV.pdf" download="Remo_Yukoff_CV.pdf">CV</a>
-  <a class="btn solid" href="#contact" data-i18n="hero.cta1">contactar</a>
   <div class="toggles">
-    <button class="theme-toggle" id="theme-toggle" aria-label="toggle theme">
-      <svg class="theme-icon-sun" viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="3"/><path d="M8 1v2M8 13v2M1 8h2M13 8h2M3.05 3.05l1.42 1.42M11.53 11.53l1.42 1.42M3.05 12.95l1.42-1.42M11.53 4.47l1.42-1.42"/></svg>
-      <svg class="theme-icon-moon" viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13.5 9.5A6 6 0 1 1 6.5 2.5a5 5 0 0 0 7 7z"/></svg>
+    <button class="icon-btn" id="theme-toggle" aria-label="Cambiar tema">
+      <svg class="theme-icon-sun" viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="3"/><path d="M8 1v2M8 13v2M1 8h2M13 8h2M3.05 3.05l1.42 1.42M11.53 11.53l1.42 1.42M3.05 12.95l1.42-1.42M11.53 4.47l1.42-1.42"/></svg>
+      <svg class="theme-icon-moon" viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13.5 9.5A6 6 0 1 1 6.5 2.5a5 5 0 0 0 7 7z"/></svg>
     </button>
-    <button class="lang-toggle" id="lang-toggle" aria-label="toggle language">
-      <span class="lang-opt" data-lang="es">ES</span><span class="lang-sep">/</span><span class="lang-opt" data-lang="en">EN</span>
+    <button class="icon-btn lang-toggle" id="lang-toggle" aria-label="Cambiar idioma / change language">
+      <span class="lang-opt" data-lang="es">ES</span><span class="lang-opt" data-lang="en">EN</span>
     </button>
+    <a class="btn small" href="assets/Remo_Yukoff_CV.pdf" download="Remo_Yukoff_CV.pdf">CV</a>
   </div>
-</div>
+</header>
 
 <main id="top">
 
 <section class="hero">
-  <h1>Remo Yukoff.</h1>
-  <div class="g12 hero-row">
-    <div class="hero-main">
-      <p class="lede" data-i18n="hero.lede">Senior Software Development Engineer in Test. Construyo frameworks de automatización escalables para plataformas web, APIs y data pipelines en organizaciones globales como <strong>Disney</strong>, <strong>PwC</strong>, <strong>Cision</strong>, <strong>Under Armour</strong> e <strong>Intercontinental Exchange</strong>.</p>
+  <div class="hero-head">
+    <h1>Remo<br>Yukoff</h1>
+    <div class="hero-side">
+      <p class="status"><i class="pulse"></i><span data-i18n="hero.status">Disponible para nuevos roles · Argentina, remoto</span></p>
+      <p class="lede" data-i18n="hero.lede">Senior AI Quality &amp; Test Automation Engineer. Ocho años automatizando tests de web, APIs y data pipelines; hoy enfocado en la calidad de productos con LLMs.</p>
       <div class="cta">
-        <a class="btn solid" href="#contact" data-i18n="hero.cta1">contactar</a>
-        <a class="btn" href="assets/Remo_Yukoff_CV.pdf" download="Remo_Yukoff_CV.pdf" data-i18n="hero.cta2">descargar CV</a>
-        <a class="btn" href="https://github.com/RemoYukoff" target="_blank" rel="noopener">GitHub ↗</a>
+        <a class="btn solid" href="#contact" data-i18n="hero.cta1">Contactar</a>
+        <a class="btn" href="assets/Remo_Yukoff_CV.pdf" download="Remo_Yukoff_CV.pdf" data-i18n="hero.cta2">Descargar CV</a>
+        <a class="btn" href="https://github.com/RemoYukoff" target="_blank" rel="noopener">GitHub</a>
       </div>
     </div>
-    <p class="fine" data-i18n="hero.fine">Senior SDET · Argentina · Remoto. Ocho años en automatización de pruebas: web, mobile, API, performance y validación de datos. Actualmente en The Walt Disney Company vía Wizeline.</p>
   </div>
-  <div class="stats">
-    <div><b>8+</b><span data-i18n="stats.years">años de experiencia</span></div>
-    <div><b>5</b><span data-i18n="stats.clients">clientes enterprise</span></div>
-    <div><b>~40%</b><span data-i18n="stats.regression">reducción regresión</span></div>
-    <div><b>5K</b><span data-i18n="stats.load">req/s en load testing</span></div>
-  </div>
-</section>
-<div class="seam"></div>
 
-<nav class="index" aria-label="On this page">
-  <a href="#clients" data-i18n="nav.clients">clientes</a><a href="#experience" data-i18n="nav.experience">experiencia</a><a href="#projects" data-i18n="nav.projects">proyectos</a><a href="#stack" data-i18n="nav.stack">stack</a><a href="#edu" data-i18n="nav.edu">formación</a><a href="#contact" data-i18n="nav.contact">contacto</a>
-</nav>
+  <figure class="trace" aria-labelledby="trace-cap">
+    <figcaption id="trace-cap" class="trace-bar">
+      <span class="mono">career.trace</span>
+      <span class="trace-meta"><span data-dur-total>8a 7m</span> · <span data-i18n="trace.spans">5 roles, 5 clientes</span></span>
+    </figcaption>
+    <div class="trace-body">
+      <div class="axis" aria-hidden="true">
+        <span style="--m:0">2018</span><span style="--m:12">2019</span><span style="--m:24">2020</span><span style="--m:36">2021</span><span style="--m:48">2022</span><span style="--m:60">2023</span><span style="--m:72">2024</span><span style="--m:84">2025</span><span style="--m:96">2026</span>
+      </div>
+      <ol class="spans">
+        <li style="--s:2;--e:43;--i:0">
+          <a href="#job-solvd"><span class="lbl"><span class="long">Under Armour</span><span class="short">UA</span> / ICE</span><span class="trk"><span class="span-bar"></span></span><span class="dur" data-from="2018-03" data-to="2021-08">3a 5m</span></a>
+        </li>
+        <li style="--s:43;--e:61;--i:1">
+          <a href="#job-cision"><span class="lbl">Cision</span><span class="trk"><span class="span-bar"></span></span><span class="dur" data-from="2021-08" data-to="2023-02">1a 6m</span></a>
+        </li>
+        <li style="--s:53;--e:76;--i:2">
+          <a href="#job-eclypsium"><span class="lbl">Eclypsium</span><span class="trk"><span class="span-bar"></span></span><span class="dur" data-from="2022-06" data-to="2024-05">1a 11m</span></a>
+        </li>
+        <li style="--s:76;--e:81;--i:3">
+          <a href="#job-pwc"><span class="lbl">PwC</span><span class="trk"><span class="span-bar"></span></span><span class="dur" data-from="2024-05" data-to="2024-10">5m</span></a>
+        </li>
+        <li class="running" style="--s:81;--e:105;--i:4" data-live>
+          <a href="#job-disney"><span class="lbl">Disney</span><span class="trk"><span class="span-bar"></span></span><span class="dur" data-from="2024-10" data-to="now">2a</span></a>
+        </li>
+      </ol>
+    </div>
+  </figure>
 
-<section class="block" id="clients">
-  <div class="head">
-    <h2 data-i18n="clients.title">Clientes seleccionados.</h2>
-    <div class="aside"><p class="lead" data-i18n="clients.lead">Cinco organizaciones globales, cinco dominios distintos: streaming, consultoría, media analytics, retail deportivo y fintech.</p></div>
-  </div>
-  <ul class="logos">
-    <li>
-      <div class="logo-art"><span class="logo logo-disney" role="img" aria-label="Disney"></span></div>
-      <span class="meta">The Walt Disney Company</span>
-      <span class="tagline">streaming · data pipelines</span>
-    </li>
-    <li>
-      <div class="logo-art"><span class="logo logo-pwc" role="img" aria-label="PwC"></span></div>
-      <span class="meta">PricewaterhouseCoopers</span>
-      <span class="tagline" data-i18n="clients.pwc">plataforma enterprise · Katalon</span>
-    </li>
-    <li>
-      <div class="logo-art"><span class="logo logo-cision" role="img" aria-label="Cision"></span></div>
-      <span class="meta">Cision</span>
-      <span class="tagline" data-i18n="clients.cision">media analytics · Kafka · k6</span>
-    </li>
-    <li>
-      <div class="logo-art"><span class="logo logo-ua" role="img" aria-label="Under Armour"></span></div>
-      <span class="meta">Under Armour</span>
-      <span class="tagline">mobile · iOS &amp; Android · Appium</span>
-    </li>
-    <li>
-      <div class="logo-art"><span class="logo logo-ice" role="img" aria-label="Intercontinental Exchange"></span></div>
-      <span class="meta">Intercontinental Exchange</span>
-      <span class="tagline" data-i18n="clients.ice">fintech · web &amp; API</span>
-    </li>
+  <ul class="logos" aria-label="Clientes">
+    <li><span class="logo logo-disney" role="img" aria-label="Disney"></span></li>
+    <li><span class="logo logo-pwc" role="img" aria-label="PwC"></span></li>
+    <li><span class="logo logo-cision" role="img" aria-label="Cision"></span></li>
+    <li><span class="logo logo-ua" role="img" aria-label="Under Armour"></span></li>
+    <li><span class="logo logo-ice" role="img" aria-label="Intercontinental Exchange"></span></li>
   </ul>
 </section>
 
-<section class="block" id="experience">
-  <div class="head">
-    <h2 data-i18n="exp.title">Experiencia.</h2>
-    <div class="aside"><p class="lead" data-i18n="exp.lead">De mobile y web a APIs, performance y data pipelines. Cada rol sumó una capa al mismo oficio: que el software salga sin romperse.</p></div>
+<section class="sec" id="experience">
+  <div class="sec-head">
+    <h2 data-i18n="exp.title">Experiencia</h2>
+    <p class="lead" data-i18n="exp.lead">De mobile y web a APIs, performance y data pipelines. Cada rol sumó una capa al mismo oficio: que el software salga sin romperse.</p>
   </div>
   <ol class="jobs">
-    <li class="job">
-      <div class="when">
-        <time>Oct 2024 — <span data-i18n="exp.present">presente</span></time>
-        <span class="tag on"><i class="dot on"></i><span data-i18n="exp.current">actual</span></span>
+    <li class="job" id="job-disney">
+      <div class="job-head">
+        <span class="state run" aria-hidden="true"></span>
+        <div>
+          <h3>SDET</h3>
+          <p class="org">The Walt Disney Company <span class="via">via Wizeline · <span data-i18n="exp.contract">contrato</span></span></p>
+        </div>
+        <time class="mono">Oct 2024 – <span data-i18n="exp.present">hoy</span></time>
       </div>
-      <div class="what">
-        <h3>Senior SDET</h3>
-        <p class="org">The Walt Disney Company <span class="via">via Wizeline</span></p>
-        <ul>
-          <li data-i18n="exp.disney.1">Implementé validación automatizada de data pipelines a gran escala para segmentación de audiencia en plataformas de streaming.</li>
-          <li data-i18n="exp.disney.2">Validación de datasets con SQL checks, schema validation y comparaciones cross-pipeline sobre Spark y Databricks.</li>
-          <li data-i18n="exp.disney.3">Consultas de outputs vía Athena SQL + DBeaver; batch pipelines en Airflow respaldados por S3, Glue y Databricks workflows.</li>
-          <li data-i18n="exp.disney.4">Colaboración con data engineering para investigar fallas y mejorar la confiabilidad de pipelines productivos.</li>
-        </ul>
-      </div>
-      <div class="chips"><span class="chip">Python</span><span class="chip">Spark</span><span class="chip">Databricks</span><span class="chip">Airflow</span><span class="chip">Athena</span><span class="chip">S3</span><span class="chip">Glue</span></div>
+      <ul class="asserts">
+        <li data-i18n="exp.disney.1">Implementé validación automatizada de data pipelines a gran escala para segmentación de audiencia en plataformas de streaming.</li>
+        <li data-i18n="exp.disney.2">Validación de datasets con SQL checks, schema validation y comparaciones cross-pipeline sobre Spark y Databricks.</li>
+        <li data-i18n="exp.disney.3">Consultas de outputs vía Athena SQL + DBeaver; batch pipelines en Airflow respaldados por S3, Glue y Databricks workflows.</li>
+        <li data-i18n="exp.disney.4">Colaboración con data engineering para investigar fallas y mejorar la confiabilidad de pipelines productivos.</li>
+      </ul>
+      <p class="tools">Python, SQL, Spark, Databricks, Airflow, Athena, S3, Glue</p>
     </li>
-    <li class="job">
-      <div class="when"><time>May 2024 — Oct 2024</time></div>
-      <div class="what">
-        <h3>SDET</h3>
-        <p class="org">PwC <span class="via">via Tata Consultancy Services</span></p>
-        <ul>
-          <li data-i18n="exp.pwc.1">Diseñé estrategia de automatización para validación de plataforma enterprise.</li>
-          <li data-i18n="exp.pwc.2">Implementación de suites de regresión automatizadas con Katalon, integradas en pipelines de CI.</li>
-          <li data-i18n="exp.pwc.3">Análisis de defectos y soporte de ciclos de validación de release.</li>
-        </ul>
+    <li class="job" id="job-pwc">
+      <div class="job-head">
+        <span class="state" aria-hidden="true"></span>
+        <div>
+          <h3>SDET</h3>
+          <p class="org">PwC <span class="via">via Tata Consultancy Services · <span data-i18n="exp.contract">contrato</span></span></p>
+        </div>
+        <time class="mono">May 2024 – Oct 2024</time>
       </div>
-      <div class="chips"><span class="chip">Katalon</span><span class="chip">CI/CD</span><span class="chip">Regression</span></div>
+      <ul class="asserts">
+        <li data-i18n="exp.pwc.1">Diseñé estrategia de automatización para validación de plataforma enterprise.</li>
+        <li data-i18n="exp.pwc.2">Implementación de suites de regresión automatizadas con Katalon, integradas en pipelines de CI.</li>
+      </ul>
+      <p class="tools">Katalon, CI/CD, Regression</p>
     </li>
-    <li class="job">
-      <div class="when"><time>Jun 2022 — May 2024</time></div>
-      <div class="what">
-        <h3>SDET</h3>
-        <p class="org">Eclypsium</p>
-        <ul>
-          <li data-i18n="exp.eclyp.1">Diseñé e implementé framework de automatización en Python con pytest, Behave y Selenium.</li>
-          <li data-i18n="exp.eclyp.2">Introduje Page Object Model, fixtures y reporting con Allure.</li>
-          <li data-i18n="exp.eclyp.3">Integración con Jenkins, GitHub Actions y GitLab CI; performance testing con Locust para APIs en el rango de 1–5k req/s.</li>
-          <li data-i18n="exp.eclyp.4">Docker + Localstack para simular servicios AWS en integration testing; estabilicé el framework legacy permitiendo adopción transversal del equipo de QA.</li>
-        </ul>
+    <li class="job" id="job-eclypsium">
+      <div class="job-head">
+        <span class="state" aria-hidden="true"></span>
+        <div>
+          <h3>SDET</h3>
+          <p class="org">Eclypsium <span class="via"><span data-i18n="exp.contract">contrato</span></span></p>
+        </div>
+        <time class="mono">Jun 2022 – May 2024</time>
       </div>
-      <div class="chips"><span class="chip">Python</span><span class="chip">pytest</span><span class="chip">Behave</span><span class="chip">Selenium</span><span class="chip">Locust</span><span class="chip">Docker</span><span class="chip">Localstack</span><span class="chip">Allure</span></div>
+      <ul class="asserts">
+        <li data-i18n="exp.eclyp.1">Diseñé e implementé framework de automatización en Python con pytest, Behave y Selenium.</li>
+        <li data-i18n="exp.eclyp.2">Introduje Page Object Model, fixtures y reporting con Allure.</li>
+        <li data-i18n="exp.eclyp.3">Integración con Jenkins, GitHub Actions y GitLab CI; performance testing con Locust para APIs en el rango de 1–5k req/s.</li>
+        <li data-i18n="exp.eclyp.4">Docker + Localstack para simular servicios AWS en integration testing; estabilicé el framework legacy permitiendo adopción transversal del equipo de QA.</li>
+      </ul>
+      <p class="tools">Python, pytest, Behave, Selenium, Locust, Docker, Localstack, Allure</p>
     </li>
-    <li class="job">
-      <div class="when"><time>Aug 2021 — Feb 2023</time></div>
-      <div class="what">
-        <h3>Test Automation Engineer</h3>
-        <p class="org">Cision <span class="via">via Encora</span></p>
-        <ul>
-          <li data-i18n="exp.cision.1">Automatización de testing para plataforma de media analytics procesando alto volumen de news y article data.</li>
-          <li data-i18n="exp.cision.2">UI con Selenium + API testing con pytest, requests y Postman; load testing con k6.</li>
-          <li data-i18n="exp.cision.3">Trabajo con pipelines de ingesta basados en Kafka; mentoring a QA engineers junior y aportes a la estrategia de testing.</li>
-        </ul>
+    <li class="job" id="job-cision">
+      <div class="job-head">
+        <span class="state" aria-hidden="true"></span>
+        <div>
+          <h3>Test Automation Engineer</h3>
+          <p class="org">Cision <span class="via">via Encora · <span data-i18n="exp.contract">contrato</span></span></p>
+        </div>
+        <time class="mono">Aug 2021 – Feb 2023</time>
       </div>
-      <div class="chips"><span class="chip">Selenium</span><span class="chip">pytest</span><span class="chip">k6</span><span class="chip">Kafka</span><span class="chip">Postman</span></div>
+      <ul class="asserts">
+        <li data-i18n="exp.cision.1">Automatización de testing para plataforma de media analytics procesando alto volumen de news y article data.</li>
+        <li data-i18n="exp.cision.2">UI con Selenium + API testing con pytest, requests y Postman; load testing con k6.</li>
+        <li data-i18n="exp.cision.3">Trabajo con pipelines de ingesta basados en Kafka; mentoring a QA engineers junior y aportes a la estrategia de testing.</li>
+      </ul>
+      <p class="tools">Selenium, pytest, k6, Kafka, Postman</p>
     </li>
-    <li class="job">
-      <div class="when"><time>Mar 2018 — Aug 2021</time></div>
-      <div class="what">
-        <h3>Test Automation Engineer</h3>
-        <p class="org">Under Armour / Intercontinental Exchange <span class="via">via Solvd</span></p>
-        <ul>
-          <li data-i18n="exp.ua.1">Mobile automation testing para iOS y Android con Appium; web y API con Selenium y Cypress.</li>
-          <li data-i18n="exp.ua.2">Reducí tiempo de regresión ~40% a través de mejoras en automatización.</li>
-          <li data-i18n="exp.ua.3">Participación en ciclos de regresión, análisis de fallas y validación de releases.</li>
-        </ul>
+    <li class="job" id="job-solvd">
+      <div class="job-head">
+        <span class="state" aria-hidden="true"></span>
+        <div>
+          <h3>Test Automation Engineer</h3>
+          <p class="org">Under Armour / Intercontinental Exchange <span class="via">via Solvd · <span data-i18n="exp.contract">contrato</span></span></p>
+        </div>
+        <time class="mono">Mar 2018 – Aug 2021</time>
       </div>
-      <div class="chips"><span class="chip">Appium</span><span class="chip">Selenium</span><span class="chip">Cypress</span><span class="chip">iOS</span><span class="chip">Android</span></div>
+      <ul class="asserts">
+        <li data-i18n="exp.ua.1">Mobile automation testing para iOS y Android con Appium; web y API con Selenium y Cypress.</li>
+        <li data-i18n="exp.ua.2">Reducí tiempo de regresión ~40% a través de mejoras en automatización.</li>
+        <li data-i18n="exp.ua.3">Participación en ciclos de regresión, análisis de fallas y validación de releases.</li>
+      </ul>
+      <p class="tools">Appium, Selenium, Cypress, iOS, Android</p>
     </li>
   </ol>
 </section>
 
-<section class="block" id="projects">
-  <div class="head">
-    <h2 data-i18n="oss.title">Proyectos.</h2>
-    <div class="aside"><p class="lead" data-i18n="oss.lead">Dos productos propios en producción y dos herramientas open source para el trabajo diario de testing.</p></div>
+<section class="sec" id="projects">
+  <div class="sec-head">
+    <h2 data-i18n="oss.title">Proyectos</h2>
+    <p class="lead" data-i18n="oss.lead">Tres productos propios en producción y dos herramientas open source para el trabajo diario de testing.</p>
   </div>
-  <div class="cols2">
-    <article class="card">
-      <div class="card-head">
-        <div>
-          <h3 class="big" data-i18n="oss.fp.title">Inflación <span class="accent">Arg</span></h3>
-          <p class="tagline" data-i18n="oss.fp.tagline">Datos económicos abiertos, sin editorial, para el argentino del día a día.</p>
-        </div>
-        <span class="tag on"><i class="dot on"></i><span data-i18n="oss.fp.status">shipped · finalizado</span></span>
-      </div>
-      <p data-i18n="oss.fp.desc">Plataforma de visualización de datos económicos argentinos con tres principios: <strong>transparencia total</strong> (cada número con fuente y metodología), <strong>comparación directa</strong> (oficiales, alternativos y expectativas en el mismo gráfico), y <strong>contexto histórico</strong> (devaluaciones, cepos, crisis anotados sobre la serie).</p>
-      <div class="chips"><span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">Vite</span><span class="chip">@visx</span><span class="chip">Hono</span><span class="chip">Node.js</span><span class="chip">Railway</span><span class="chip">Vercel</span></div>
+  <div class="products">
+    <article class="product wide">
+      <p class="product-state"><i class="tick"></i><span data-i18n="oss.q.status">Lanzado · SaaS pago</span></p>
+      <h3>Quorum</h3>
+      <p class="tagline" data-i18n="oss.q.tagline">Diseño de casos de test con IA para Jira: un agente convierte cada story en casos mapeados a sus criterios de aceptación.</p>
+      <dl class="features">
+        <div><dt data-i18n="oss.q.f1.t">Agente con tool calling</dt><dd data-i18n="oss.q.f1.d">Cada cambio es una tool call validada con Zod; si falla, se reintenta con el error como feedback.</dd></div>
+        <div><dt data-i18n="oss.q.f2.t">Pregunta antes de adivinar</dt><dd data-i18n="oss.q.f2.d">Un requisito ambiguo dispara preguntas aclaratorias en vez de casos inventados.</dd></div>
+        <div><dt data-i18n="oss.q.f3.t">Costo bajo control</dt><dd data-i18n="oss.q.f3.d">Presupuestos de OpenRouter en Terraform, cupo por suscriptor y alertas diarias. Unos US$0,12 por generación.</dd></div>
+        <div><dt data-i18n="oss.q.f4.t">De vuelta a Jira</dt><dd data-i18n="oss.q.f4.d">Los casos aceptados se sincronizan como sub-tasks. OAuth, credenciales cifradas y suscripciones.</dd></div>
+      </dl>
+      <p class="tools">Next.js, TypeScript, PostgreSQL, Drizzle, Vercel AI SDK, Claude, OpenRouter, Zod, Terraform</p>
       <div class="cta">
-        <a class="btn solid" href="https://inflacion-ar-frontend.vercel.app/" target="_blank" rel="noopener"><span data-i18n="oss.fp.cta1">abrir demo</span> ↗</a>
+        <a class="btn solid" href="https://usequorum.dev" target="_blank" rel="noopener">usequorum.dev</a>
       </div>
     </article>
-    <article class="card">
-      <div class="card-head">
-        <div>
-          <h3 class="big">4<span class="accent">foodies</span></h3>
-          <p class="tagline" data-i18n="oss.fp2.tagline">Aplicación social de reseñas de comida — descubrí, guardá y reseñá restaurantes.</p>
-        </div>
-        <span class="tag on"><i class="dot on"></i><span data-i18n="oss.fp2.status">v1 shipped · iOS & Android</span></span>
-      </div>
-      <p data-i18n="oss.fp2.desc">App social <strong>mobile-first</strong> sobre <strong>React Native + Expo</strong> con <strong>backend Node/Express en TypeScript</strong>, contrato de API tipado end-to-end, y <strong>Supabase</strong> como base de datos con RLS por tabla, auth y storage.</p>
-      <div class="chips"><span class="chip">React Native</span><span class="chip">Expo</span><span class="chip">TypeScript</span><span class="chip">Zustand</span><span class="chip">Node.js</span><span class="chip">Express</span><span class="chip">Supabase</span><span class="chip">PostgreSQL</span></div>
+    <article class="product">
+      <p class="product-state"><i class="tick"></i><span data-i18n="oss.fp2.status">En producción · iOS</span></p>
+      <h3>4foodies</h3>
+      <p class="tagline" data-i18n="oss.fp2.tagline">App social de reseñas de comida: descubrí, guardá y reseñá restaurantes.</p>
+      <dl class="features">
+        <div><dt data-i18n="oss.fp2.f1.t">Ranking y feed propios</dt><dd data-i18n="oss.fp2.f1.d">Scoring de explore, restaurantes en tendencia y sugerencias de a quién seguir.</dd></div>
+        <div><dt data-i18n="oss.fp2.f2.t">Import de listas de Google Maps</dt><dd data-i18n="oss.fp2.f2.d">Pipeline en background con jobs programados.</dd></div>
+        <div><dt data-i18n="oss.fp2.f3.t">API REST + RLS</dt><dd data-i18n="oss.fp2.f3.d">Node.js y Express con OpenAPI; PostgreSQL en Supabase con row-level security.</dd></div>
+        <div><dt data-i18n="oss.fp2.f4.t">Producción self-hosted</dt><dd data-i18n="oss.fp2.f4.d">VPS con Docker Compose y Traefik, deploys con GitHub Actions y rollback, Prometheus, Grafana y Loki. Unos 200 tests con Vitest y Supertest.</dd></div>
+      </dl>
+      <p class="tools">React Native, Expo, TypeScript, Node.js, Express, OpenAPI, Supabase, PostgreSQL, Docker</p>
       <div class="cta">
-        <a class="btn solid" href="https://apps.apple.com/ar/app/4foodies/id6760569076" target="_blank" rel="noopener"><span data-i18n="oss.fp2.cta1">descargar en App Store</span> ↗</a>
-        <a class="btn solid" href="https://play.google.com/store/apps/details?id=com.fourfoodies.app" target="_blank" rel="noopener"><span data-i18n="oss.fp2.cta2">descargar en Google Play</span> ↗</a>
-        <a class="btn" href="https://4foodies.app/" target="_blank" rel="noopener">4foodies.app ↗</a>
+        <a class="btn solid" href="https://apps.apple.com/ar/app/4foodies/id6760569076" target="_blank" rel="noopener">App Store</a>
+        <a class="btn" href="https://4foodies.app/" target="_blank" rel="noopener">4foodies.app</a>
+      </div>
+    </article>
+    <article class="product">
+      <p class="product-state"><i class="tick"></i><span data-i18n="oss.fp.status">Terminado</span></p>
+      <h3 data-i18n="oss.fp.title">Inflación Arg</h3>
+      <p class="tagline" data-i18n="oss.fp.tagline">Datos económicos abiertos, sin editorial, para el argentino del día a día.</p>
+      <dl class="features">
+        <div><dt data-i18n="oss.fp.f1.t">41 fuentes integradas</dt><dd data-i18n="oss.fp.f1.d">INDEC, IPCBA, REM BCRA, UTDT, Big Mac, Nafta YPF, tarifas, pobreza, comparación internacional.</dd></div>
+        <div><dt data-i18n="oss.fp.f2.t">Eventos históricos anotados</dt><dd data-i18n="oss.fp.f2.d">PASO, cepos, devaluaciones, acuerdos FMI marcados sobre la serie para dar contexto inmediato.</dd></div>
+        <div><dt data-i18n="oss.fp.f3.t">Calculadora '¿Cuánto vale hoy?'</dt><dd data-i18n="oss.fp.f3.d">Dado un mes de inicio y un monto en ARS, calcula el equivalente actual componiendo el IPC mensual.</dd></div>
+        <div><dt data-i18n="oss.fp.f4.t">Metodología por fuente</dt><dd data-i18n="oss.fp.f4.d">Cada serie documenta qué mide, de dónde viene, qué transformaciones se aplican y qué limitaciones tiene.</dd></div>
+      </dl>
+      <p class="tools">React, TypeScript, Vite, @visx, Hono, Node.js, Railway, Vercel</p>
+      <div class="cta">
+        <a class="btn solid" href="https://inflacion-ar-frontend.vercel.app/" target="_blank" rel="noopener" data-i18n="oss.fp.cta1">Abrir demo</a>
       </div>
     </article>
   </div>
 
-  <p class="kicker" data-i18n="oss.tools">Herramientas open source</p>
-  <div class="cols2">
-    <article class="card">
-      <div class="card-head">
-        <h3 class="mono">aqueductus</h3>
-        <a class="btn" href="https://github.com/RemoYukoff/aqueductus" target="_blank" rel="noopener">GitHub ↗</a>
-      </div>
+  <h3 class="sub" data-i18n="oss.tools">Herramientas open source</h3>
+  <ul class="oss">
+    <li>
+      <a class="oss-name mono" href="https://github.com/RemoYukoff/aqueductus" target="_blank" rel="noopener">aqueductus</a>
       <p data-i18n="oss.aqua.desc">Framework open source para testing de datos: valida datasets y outputs de pipelines usando SQL sobre múltiples data sources, con configuración declarativa en YAML.</p>
-      <div class="chips"><span class="chip">Python</span><span class="chip">YAML</span><span class="chip">SQL</span><span class="chip">Data Quality</span></div>
-    </article>
-    <article class="card">
-      <div class="card-head">
-        <h3 class="mono">behave-runner</h3>
-        <a class="btn" href="https://open-vsx.org/extension/remoyukoff/behave-runner" target="_blank" rel="noopener">Open VSX ↗</a>
-      </div>
+      <span class="where">GitHub · Python, YAML, SQL</span>
+    </li>
+    <li>
+      <a class="oss-name mono" href="https://open-vsx.org/extension/remoyukoff/behave-runner" target="_blank" rel="noopener">behave-runner</a>
       <p data-i18n="oss.behave.desc">Extensión de VS Code para ejecutar tests BDD con Behave directamente desde el editor. Soporta feature files y scenario outlines; mejora el workflow para entornos Python.</p>
-      <div class="chips"><span class="chip">TypeScript</span><span class="chip">VS Code API</span><span class="chip">BDD</span><span class="chip">Python</span></div>
-    </article>
-  </div>
+      <span class="where">Open VSX · TypeScript, VS Code API</span>
+    </li>
+  </ul>
 </section>
 
-<section class="block" id="stack">
-  <div class="head">
-    <h2 data-i18n="stack.title">Stack &amp; skills.</h2>
-    <div class="aside"><p class="lead" data-i18n="stack.lead">Python primero. Después, lo que el problema pida: UI, mobile, API, carga o datos.</p></div>
+<section class="sec" id="stack">
+  <div class="sec-head">
+    <h2 data-i18n="stack.title">Stack</h2>
+    <p class="lead" data-i18n="stack.lead">Python primero. Después, lo que el problema pida: UI, mobile, API, carga o datos.</p>
   </div>
-  <div class="tbl-wrap"><table class="tbl">
-    <colgroup><col class="edge"><col></colgroup>
-    <thead><tr><th data-i18n="stack.col.category">Categoría</th><th data-i18n="stack.col.tools">Herramientas</th></tr></thead>
-    <tbody>
-      <tr><th data-i18n="stack.row.lang">Languages</th><td><div class="chips"><span class="chip">Python</span><span class="chip">Java</span><span class="chip">JavaScript</span></div></td></tr>
-      <tr><th data-i18n="stack.row.auto">Test Automation</th><td><div class="chips"><span class="chip">pytest</span><span class="chip">Selenium</span><span class="chip">Playwright</span><span class="chip">Behave</span><span class="chip">Cucumber</span><span class="chip">Appium</span></div></td></tr>
-      <tr><th data-i18n="stack.row.api">API Testing</th><td><div class="chips"><span class="chip">REST</span><span class="chip">GraphQL</span><span class="chip">requests</span><span class="chip">Postman</span><span class="chip">Rest-Assured</span></div></td></tr>
-      <tr><th data-i18n="stack.row.perf">Performance</th><td><div class="chips"><span class="chip">k6</span><span class="chip">Locust</span></div></td></tr>
-      <tr><th>CI/CD</th><td><div class="chips"><span class="chip">Jenkins</span><span class="chip">GitHub Actions</span><span class="chip">GitLab CI</span></div></td></tr>
-      <tr><th data-i18n="stack.row.infra">Infrastructure</th><td><div class="chips"><span class="chip">Docker</span><span class="chip">Localstack</span><span class="chip">AWS</span><span class="chip">S3</span><span class="chip">Athena</span><span class="chip">Glue</span></div></td></tr>
-      <tr><th data-i18n="stack.row.data">Data Testing</th><td><div class="chips"><span class="chip">SQL validation</span><span class="chip">Schema validation</span><span class="chip">Dataset comparison</span></div></td></tr>
-      <tr><th>Observability</th><td><div class="chips"><span class="chip">Prometheus</span><span class="chip">Elastic</span><span class="chip">Grafana</span></div></td></tr>
-      <tr><th>Databases</th><td><div class="chips"><span class="chip">PostgreSQL</span><span class="chip">MySQL</span><span class="chip">MongoDB</span></div></td></tr>
-    </tbody>
-  </table></div>
+  <dl class="stack">
+    <div><dt data-i18n="stack.row.lang">Lenguajes</dt><dd>Python, TypeScript, JavaScript, Java, SQL</dd></div>
+    <div><dt data-i18n="stack.row.ai">IA y LLMs</dt><dd data-i18n="stack.ai">Agentes con tool calling, Vercel AI SDK, OpenRouter, Claude, prompt engineering, validación de output estructurado con Zod, monitoreo de costos</dd></div>
+    <div><dt data-i18n="stack.row.auto">Automatización</dt><dd>pytest, Selenium, Playwright, Cypress, Vitest, Behave, Cucumber, Appium, Allure</dd></div>
+    <div><dt data-i18n="stack.row.perf">Performance</dt><dd>k6, Locust</dd></div>
+    <div><dt data-i18n="stack.row.api">APIs y backend</dt><dd>Node.js, Express, Next.js, REST, OpenAPI, GraphQL, requests, Postman, REST Assured</dd></div>
+    <div><dt data-i18n="stack.row.infra">CI/CD y cloud</dt><dd>GitHub Actions, Jenkins, GitLab CI, Docker, Traefik, Terraform, LocalStack, Vercel, AWS (S3, Athena, Glue), Supabase</dd></div>
+    <div><dt data-i18n="stack.row.data">Datos y pipelines</dt><dd data-i18n="stack.data">Spark, Databricks, Airflow, Kafka, validación SQL y de schemas, comparación de datasets</dd></div>
+    <div><dt data-i18n="stack.row.db">Bases de datos</dt><dd>PostgreSQL, MySQL, MongoDB, Drizzle ORM</dd></div>
+    <div><dt>Observability</dt><dd>Prometheus, Grafana, Loki, Elastic</dd></div>
+  </dl>
 </section>
 
-<section class="block" id="edu">
-  <div class="head">
-    <h2 data-i18n="edu.title">Formación &amp; idiomas.</h2>
+<section class="sec" id="edu">
+  <div class="sec-head">
+    <h2 data-i18n="edu.title">Formación</h2>
   </div>
-  <div class="credits">
-    <div>
-      <dl>
-        <dt data-i18n="edu.sub.studies">Estudios</dt>
-        <dd>
-          <ul class="edu-list">
-            <li><div class="edu-inst">National University of the Chaco Austral</div><div class="edu-area" data-i18n="edu.cs">Bachelor en Computer Science</div></li>
-            <li><div class="edu-inst">University of Buenos Aires <span class="dim">— IALAB</span></div><div class="edu-area" data-i18n="edu.ai">Inteligencia Artificial</div></li>
-            <li><div class="edu-inst">Acámica</div><div class="edu-area">Data Science</div></li>
-            <li><div class="edu-inst">Globant</div><div class="edu-area">Python — Flask, Django</div></li>
-            <li><div class="edu-inst">Informatorio Chaco</div><div class="edu-area" data-i18n="edu.fs">Fullstack Development</div></li>
-          </ul>
-        </dd>
-      </dl>
-    </div>
-    <div>
-      <dl>
-        <dt data-i18n="edu.sub.lang">Idiomas</dt>
-        <dd>
-          <div class="bar"><span class="lbl">Español</span><div class="track"><div class="fill" style="width:100%"></div></div><span class="val" data-i18n="edu.lang.native">Nativo</span></div>
-          <div class="bar"><span class="lbl">English</span><div class="track"><div class="fill" style="width:82%"></div></div><span class="val">C1</span></div>
-        </dd>
-      </dl>
-    </div>
-    <div>
-      <dl>
-        <dt data-i18n="edu.sub.elsewhere">En otros lados</dt>
-        <dd>
-          <ul class="links">
-            <li><a href="https://github.com/RemoYukoff" target="_blank" rel="noopener">github.com/RemoYukoff ↗</a></li>
-            <li><a href="https://www.linkedin.com/in/remoyukoff" target="_blank" rel="noopener">linkedin.com/in/remoyukoff ↗</a></li>
-            <li><a href="assets/Remo_Yukoff_CV.pdf" download="Remo_Yukoff_CV.pdf">Remo_Yukoff_CV.pdf ↓</a></li>
-          </ul>
-        </dd>
-      </dl>
+  <div class="edu">
+    <ul class="edu-list">
+      <li><span class="edu-inst">University of London</span><span class="edu-area" data-i18n="edu.cs">BSc en Computer Science, en curso desde oct 2026</span></li>
+      <li><span class="edu-inst">Universidad de Buenos Aires, IALAB</span><span class="edu-area" data-i18n="edu.ai">Inteligencia Artificial</span></li>
+      <li><span class="edu-inst">Acámica</span><span class="edu-area">Data Science</span></li>
+    </ul>
+    <div class="langs">
+      <h3 class="sub" data-i18n="edu.sub.lang">Idiomas</h3>
+      <div class="lvl"><span>Español</span><span class="meter" style="--v:1"></span><span class="mono" data-i18n="edu.lang.native">Nativo</span></div>
+      <div class="lvl"><span>English</span><span class="meter" style="--v:.82"></span><span class="mono">C1</span></div>
     </div>
   </div>
 </section>
 
-<div class="seam up"></div>
-<section class="band" id="contact">
-  <div class="head">
-    <h2><span data-i18n="contact.h1">¿Construimos algo</span><br><span data-i18n="contact.h2">que no se rompa?</span></h2>
-    <div class="aside">
-      <p class="lead" data-i18n="contact.lede">Disponible para roles senior de SDET, QA Architect o Test Engineering Lead — remoto, idealmente en proyectos con foco en data, performance o developer tooling.</p>
-      <div class="cta">
-        <a class="btn solid" href="mailto:remo.yukoff@gmail.com">remo.yukoff@gmail.com</a>
-        <a class="btn" href="tel:+5493644338125">+54 9 3644 338125</a>
-      </div>
+<section class="contact" id="contact">
+  <h2 data-i18n="contact.h">¿Construimos algo que no se rompa?</h2>
+  <div class="contact-body">
+    <p class="lead" data-i18n="contact.lede">Busco roles senior de SDET, QA Architect o Test Engineering Lead, remotos, idealmente con foco en data, performance o developer tooling.</p>
+    <a class="mail" href="mailto:remo.yukoff@gmail.com">remo.yukoff@gmail.com</a>
+    <div class="cta">
+      <button class="btn solid" id="copy-mail" type="button" data-i18n="contact.copy">Copiar email</button>
+      <a class="btn" href="https://www.linkedin.com/in/remoyukoff" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="tel:+5493644338125">+54 9 3644 338125</a>
     </div>
   </div>
 </section>
@@ -318,20 +309,12 @@
 </main>
 
 <footer>
-  <div class="g12">
-    <p><b>Remo Yukoff</b><br>© 2026 · <span data-i18n="footer.built">construido a mano con HTML, CSS y un poquito de JS</span></p>
-    <p><b data-i18n="footer.links">Enlaces</b><br><a href="https://github.com/RemoYukoff" target="_blank" rel="noopener">GitHub</a> · <a href="https://www.linkedin.com/in/remoyukoff" target="_blank" rel="noopener">LinkedIn</a> · <a href="assets/Remo_Yukoff_CV.pdf" download="Remo_Yukoff_CV.pdf">CV</a></p>
-    <p><b data-i18n="footer.contact">Contacto</b><br><a href="mailto:remo.yukoff@gmail.com">remo.yukoff@gmail.com</a><br><span data-i18n="hero.loc">Argentina · Remoto</span></p>
-  </div>
+  <span>© 2026 Remo Yukoff</span>
+  <span data-i18n="footer.built">Hecho a mano con HTML, CSS y un poco de JS</span>
+  <span><a href="https://github.com/RemoYukoff" target="_blank" rel="noopener">GitHub</a> · <a href="https://www.linkedin.com/in/remoyukoff" target="_blank" rel="noopener">LinkedIn</a> · <a href="assets/Remo_Yukoff_CV.pdf" download="Remo_Yukoff_CV.pdf">CV</a></span>
 </footer>
 
 <script src="i18n.js"></script>
-<script>
-  document.getElementById('theme-toggle').addEventListener('click', function () {
-    var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-    document.documentElement.setAttribute('data-theme', next);
-    try { localStorage.setItem('theme', next); } catch (e) {}
-  });
-</script>
+<script src="main.js"></script>
 </body>
 </html>
