@@ -84,6 +84,7 @@ h1 { font-size: var(--fs-name); line-height: .82; font-weight: 780; font-variati
 .pulse { flex: none; width: 9px; height: 9px; border-radius: 50%; background: var(--pass); box-shadow: 0 0 0 0 var(--pass); animation: pulse 2.4s ease-out infinite; }
 @keyframes pulse { 0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--pass) 55%, transparent); } 70%, 100% { box-shadow: 0 0 0 9px transparent; } }
 .lede { margin: 0; font-size: var(--fs-lead); line-height: 1.4; max-width: 34ch; font-weight: 450; }
+@media (min-width: 901px) { h1 { font-size: min(190px, 14.2vw); } }
 @media (max-width: 900px) { .hero-head { grid-template-columns: minmax(0, 1fr); } }
 
 .trace { margin: clamp(40px, 6vw, 80px) auto 0; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); overflow: hidden; }
@@ -100,7 +101,9 @@ h1 { font-size: var(--fs-name); line-height: .82; font-weight: 780; font-variati
 .axis { z-index: -1; }
 .spans { list-style: none; margin: 0; padding: 0; }
 .spans a { align-items: center; min-height: 44px; text-decoration: none; border-radius: 8px; }
-.spans a:hover .lbl { text-decoration: underline; }
+.spans a:hover .lbl, .spans a:focus-visible .lbl { text-decoration: underline; }
+.spans li { transition: opacity .2s; }
+.spans:hover li:not(:hover) { opacity: .4; }
 .lbl { font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .lbl .short { display: none; }
 .dur { text-align: right; color: var(--dim); font: 13px/1 var(--mono); white-space: nowrap; }
@@ -128,7 +131,7 @@ h1 { font-size: var(--fs-name); line-height: .82; font-weight: 780; font-variati
 .logos li:hover .logo { background-color: var(--ink); }
 .logo-disney { --src: url('assets/logos/disney.svg'); width: 110px; height: 44px; }
 .logo-pwc    { --src: url('assets/logos/pwc.svg'); width: 92px; }
-.logo-cision { --src: url('assets/logos/cision.svg'); width: 118px; }
+.logo-cision { --src: url('assets/logos/cision.svg'); width: 100px; height: 26px; }
 .logo-ua     { --src: url('assets/logos/ua.svg'); width: 64px; }
 .logo-ice    { --src: url('assets/logos/ice.svg'); width: 44px; height: 40px; }
 @media (max-width: 640px) { .logos { justify-content: flex-start; gap: 20px 32px; } .logo { transform: scale(.85); transform-origin: left center; } }
@@ -153,6 +156,9 @@ h1 { font-size: var(--fs-name); line-height: .82; font-weight: 780; font-variati
 .jobs { list-style: none; padding: 0; }
 .job { padding: 28px 0; border-top: 1px solid var(--line); }
 .job:first-child { padding-top: 0; border-top: 0; }
+.job:target h3 { animation: mark 1.6s ease-out; }
+@keyframes mark { 0%, 40% { background: color-mix(in srgb, var(--pass) 35%, transparent); } 100% { background: transparent; } }
+.job h3 { display: inline; padding: 0 2px; margin: 0 -2px; border-radius: 3px; }
 .job-head { display: grid; grid-template-columns: 22px minmax(0, 1fr) auto; gap: 4px 14px; align-items: baseline; }
 .job h3 { font-size: var(--fs-h3); line-height: 1.2; font-weight: 650; letter-spacing: -.01em; }
 .org { margin: 2px 0 0; color: var(--dim); }
@@ -239,5 +245,6 @@ footer a:hover { color: var(--ink); }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .span-bar, .running .span-bar, .pulse { animation: none; }
+  .span-bar, .running .span-bar, .pulse, .job:target h3 { animation: none; }
+  .spans li { transition: none; }
 }
